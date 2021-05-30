@@ -17,7 +17,7 @@ let seattleShop = {
     minH: 23,
     maxH: 65,
     avgCookies: 6.3,
-    
+
     randomCustomerPerHour: [],
     avgCookiesPerHour: [],
 
@@ -68,3 +68,130 @@ for (let i = 0; i < hourOperation.length; i++) {
     // text content
     liElement.textContent=seattleShop.getAvgCookiesPerHour[i];
 }
+
+
+// Tokyo Location: 
+let tokyoShop = {
+
+    minH: 3,
+    maxH: 24,
+    avgCookies: 1.2,
+
+    randomCustomerPerHour: [],
+    avgCookiesPerHour: [],
+
+    getRandomCustomerPerHour: function () {
+        this.randomCustomerPerHour= randomNumber(3, 24);
+        console.log(this.randomCustomerPerHour)
+    },
+
+    getAvgCookiesPerHour: function(){
+        this.avgCookiesPerHour.push(this.randomCustomerPerHour*this.avgCookies)
+        console.log(this.avgCookiesPerHour)
+    },
+
+
+
+
+}
+
+
+tokyoShop.getRandomCustomerPerHour();
+tokyoShop.getAvgCookiesPerHour();
+
+
+
+
+
+
+
+// Dubai Location: 
+let dubaiShop = {
+
+    minH: 11,
+    maxH: 38,
+    avgCookies: 3.7,
+
+    randomCustomerPerHour: [],
+    avgCookiesPerHour: [],
+
+    getRandomCustomerPerHour: function () {
+        this.randomCustomerPerHour= randomNumber(11,38);
+        console.log(this.randomCustomerPerHour)
+    },
+
+    getAvgCookiesPerHour: function(){
+        this.avgCookiesPerHour.push(this.randomCustomerPerHour*this.avgCookies)
+        console.log(this.avgCookiesPerHour)
+    },
+
+
+
+
+}
+
+
+dubaiShop.getRandomCustomerPerHour();
+dubaiShop.getAvgCookiesPerHour();
+
+
+
+// Paris Location: 
+let parisShop = {
+
+    minH: 20,
+    maxH: 38,
+    avgCookies: 2.3,
+
+    randomCustomerPerHour: [],
+    avgCookiesPerHour: [],
+
+    getRandomCustomerPerHour: function () {
+        this.randomCustomerPerHour= randomNumber(11,38);
+        console.log(this.randomCustomerPerHour)
+    },
+
+    getAvgCookiesPerHour: function(){
+        this.avgCookiesPerHour.push(this.randomCustomerPerHour*this.avgCookies)
+        console.log(this.avgCookiesPerHour)
+    },
+
+
+
+
+}
+
+
+parisShop.getRandomCustomerPerHour();
+parisShop.getAvgCookiesPerHour();
+
+
+
+// Lima Location: 
+let limaShop = {
+
+    minH: 2,
+    maxH: 16    ,
+    avgCookies: 4.6,
+
+    randomCustomerPerHour: [],
+    avgCookiesPerHour: [],
+
+    getRandomCustomerPerHour: function () {
+        this.randomCustomerPerHour= randomNumber(11,38);
+        console.log(this.randomCustomerPerHour)
+    },
+
+    getAvgCookiesPerHour: function(){
+        this.avgCookiesPerHour.push(this.randomCustomerPerHour*this.avgCookies)
+        console.log(this.avgCookiesPerHour)
+    },
+
+
+
+
+}
+
+
+limaShop.getRandomCustomerPerHour();
+limaShop.getAvgCookiesPerHour();
