@@ -1,6 +1,27 @@
 body{
 background-color: beige;
-font-family: 'Courier New', Courier, monospace;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+header h1{
+    color: rgb(25, 117, 179);
+    
+    word-spacing: 10px;
+    font-size: 350%;
+
+
+}
+
+h3{
+    font-size: 150%;
+    color: rgb(25, 117, 179);
+
+}
+
+#parent{
+    color: rgb(25, 179, 102);
+    word-spacing: 10px;
+    font-size: 120%;
 
 
 }
