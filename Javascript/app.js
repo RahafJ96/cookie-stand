@@ -87,7 +87,7 @@ ShopLocation.prototype.getRender = function () {
     for (let i = 0; i < workingHours.length; i++) {
         let tData = document.createElement("td");
         tRow.appendChild(tData);
-        tData.textContent=this.randomCustomerPerHour[i];     
+        tData.textContent=this.avgCookiesPerHour[i];     
     }
     let tTotal = document.createElement('td');
     tRow.appendChild(tTotal);
@@ -139,22 +139,22 @@ function makeFooter() {
     let totalofTotal= 0;
     
     for (let i = 0; i < workingHours.length; i++) {
-        let total=0;
+        let total=0; let total2=0;
         for (let j = 0; j < allShops.length; j++) {
             total+= allShops[j].avgCookiesPerHour[i];
-            console.log(total);
-                     
         }
-
+        
         let finalData= document.createElement('td');
         tRow2.appendChild(finalData);
         finalData.textContent=total;
         totalofTotal+=total;       
+        
     }
+    let total2=0;
     let tFooter1 = document.createElement('th');
     tRow2.appendChild(tFooter1);
     tFooter1.textContent = totalofTotal;
-    
+
 }
 makeFooter();
 
