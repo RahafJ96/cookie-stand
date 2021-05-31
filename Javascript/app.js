@@ -1,12 +1,5 @@
 'use strict';
-//what we need to do?
-// calculate the number of cookies each location must make every day:
-// The number of cookies to make depends on the hours of operation from 6am to 8pm
-//minCustomerH, maxCustomerH
-// Avg number of cookies per customer 
-// method for random hour
-//Render the output
-// do it for all the locations
+
 
 let hourOperation = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
 
