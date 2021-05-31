@@ -3,6 +3,13 @@ background-color: beige;
 font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+table,th,td {
+    border: solid black 1px;
+    border-collapse: collapse;
+  }
+
+
+
 header h1{
     color: rgb(25, 117, 179);
     text-align: center;
@@ -13,6 +20,8 @@ header h1{
 }
 
 h3{
+    font-size: 120%;
+
     font-size: 150%;
     color: rgb(25, 117, 179);
 
@@ -20,8 +29,11 @@ h3{
 
 #parent{
     color: rgb(25, 179, 102);
-    word-spacing: 10px;
+    word-spacing: 2px;
+    font-size: 150%;
+   word-spacing: 10px;
     font-size: 120%;
+
 
 
 }
