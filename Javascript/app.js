@@ -505,6 +505,8 @@ makeFooter();
 // limaShop.getAvgCookiesPerHour();
 // limaShop.getRender();
 // console.log(limaShop);
+
+
 //what we need to do?
 // calculate the number of cookies each location must make every day:
 // The number of cookies to make depends on the hours of operation from 6am to 8pm
