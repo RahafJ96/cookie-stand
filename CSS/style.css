@@ -13,7 +13,7 @@ table,th,td {
 }
 th {
     height: 10px;
-    width: 80px
+    width: 80px;
     
   }
 
@@ -25,6 +25,14 @@ header h1{
 
 
 }
+header h2{
+    color: rgb(25, 117, 179);
+    text-align: center;
+    word-spacing: 10px;
+    font-size: 200%;
+
+
+}
 
 h3{
     font-size: 120%;
@@ -33,14 +41,44 @@ h3{
     color: rgb(25, 117, 179);
 
 }
+header nav{
+    float: right;
+    text-transform: capitalize;
 
-#parent{
+}
+header a{
+    text-decoration: none;
+    padding-left: 25px;
+    font-size: 220%;
+    display: inline-block;
+    margin: 0 7px;
+    list-style: none;
+
+
+}
+
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: rgb(0, 133, 185);
+  padding: 7px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.25s;
+}
+
+nav a:hover,
+nav a:active {
+  border-bottom: 2px solid rgb(31, 119, 75);
+}
+
+#table1{
     color: rgb(31, 119, 75);
     word-spacing: 2px;
     font-size: 150%;
    word-spacing: 10px;
     font-size: 120%;
-
+    margin:60px;
 
 
 }
