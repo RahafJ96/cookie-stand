@@ -12,7 +12,7 @@ let allShops=[];
 
 //Seattle Location
 
-function ShopLocation(locationName,minHours, maxHours, avgCookies, randomCustomerPerHour,avgCookiesPerHour, totalCookies ) {
+function ShopLocation(locationName,minHours, maxHours, avgCookies) {
     // add properties:
     this.locationName = locationName;
     this.minHours = minHours;
@@ -44,7 +44,7 @@ ShopLocation.prototype.getAvgCookiesPerHour = function () {
 }
 
 
-let seattle = new ShopLocation('Seattle',23,65,6.3,[],[],0);
+let seattle = new ShopLocation('Seattle',23,65,6.3);
 seattle.getRandomCustomerPerHour();
 seattle.getAvgCookiesPerHour();
     console.log(seattle);
@@ -97,7 +97,7 @@ ShopLocation.prototype.getRender = function () {
 seattle.getRender();
 
 
-let tokyo = new ShopLocation('Tokyo',3,24,1.2,[],[],0);
+let tokyo = new ShopLocation('Tokyo',3,24,1.2);
 tokyo.getRandomCustomerPerHour();
 tokyo.getAvgCookiesPerHour();
 tokyo.getRender();
@@ -114,14 +114,14 @@ dubai.getRender();
     console.log(dubai);
 
 
-let paris = new ShopLocation('Paris',20,38,2.3,[],[],0);
+let paris = new ShopLocation('Paris',20,38,2.3);
 paris.getRandomCustomerPerHour();
 paris.getAvgCookiesPerHour();
 paris.getRender();
 
     console.log(paris);   
 
-let lima = new ShopLocation('Lima',2,16,4.6,[],[],0);
+let lima = new ShopLocation('Lima',2,16,4.6);
 lima.getRandomCustomerPerHour();
 lima.getAvgCookiesPerHour();
 lima.getRender();

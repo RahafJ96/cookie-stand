@@ -3,12 +3,19 @@ background-color: beige;
 font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+
+
 table,th,td {
-    border: solid black 1px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: solid rgb(25, 117, 179) 1px;
     border-collapse: collapse;
+    text-align: center;
+}
+th {
+    height: 10px;
+    width: 80px
+    
   }
-
-
 
 header h1{
     color: rgb(25, 117, 179);
@@ -28,7 +35,7 @@ h3{
 }
 
 #parent{
-    color: rgb(25, 179, 102);
+    color: rgb(31, 119, 75);
     word-spacing: 2px;
     font-size: 150%;
    word-spacing: 10px;
