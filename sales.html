@@ -22,16 +22,50 @@
         </nav>
             <h2>The production in each Location of Salmon Cookies shop </h2>
     </header>
+
     <main>
-        <!-- <A HREF="index.html">Go to the Home Page</A> -->
-        <div id="table1"></div>
-        <div id="parent">
-        </div>
+        <form id="shopInfos">
+                <!-- Location name, min, max, avgNumber -->
+                <fieldset>
+                  <label for="nameLocation">Location Name:</label>
+                  <input type="text" id="nameLocation" name="nameLocation">
         
+                  <br>
+                  <br>
+        
+                  <label for="minNumber">The minimum number of customers per hour:</label>
+                  <input type="number" step="0.01" name="minNumber" id="minNumber">
+        
+                  <br>
+                  <br>
+                  
+                  <label for="maxNumber">The maximum number of customers per hour:</label>
+                  <input type="number" name="maxNumber" id="maxNumber">
+                  <br>
+                  <br>
+                  <label for="avgNumber">The average number of cookies purchased per customer:</label>
+                  <input type="" name="avgNumber" id="avgNumber">
+        
+                  <br>
+                  <br>
+                  
+                  <input type="submit" value="Submit">
+        
+                </fieldset>
+
+        </form>
+        
+        
+        <div id="table1"></div>
+
     </main>
 
-    <footer>
 
+
+
+
+    <footer>
+    
     </footer>
     <script src="Javascript/app.js"></script>
 
