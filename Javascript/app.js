@@ -32,10 +32,12 @@ ShopLocation.prototype.getRandomCustomerPerHour = function () {
 }
 // make prototype for the Avg Cookie per Hour  method
 ShopLocation.prototype.getAvgCookiesPerHour = function () {
+    this.totalCookies=0;
     for (let i = 0; i < workingHours.length; i++) {
         
          this.avgCookiesPerHour.push(Math.floor(this.randomCustomerPerHour[i]*this.avgCookies));
         // console.log(this.avgCookiesPerHour);
+
         this.totalCookies+=this.avgCookiesPerHour[i];
     }
 }
@@ -68,7 +70,7 @@ makeHeader()
 
 //Render
 ShopLocation.prototype.getRender = function () {
-    
+     // this.totalCookies=0;
     let tRow = document.createElement("tr");
     table1.appendChild(tRow);
     let tData = document.createElement("td");
@@ -76,14 +78,17 @@ ShopLocation.prototype.getRender = function () {
     tData.textContent= this.locationName;
     
     
+    
     for (let i = 0; i < workingHours.length; i++) {
         let tData = document.createElement("td");
         tRow.appendChild(tData);
-        tData.textContent=this.avgCookiesPerHour[i];     
+        tData.textContent=this.avgCookiesPerHour[i]; 
     }
     let tTotal = document.createElement('td');
     tRow.appendChild(tTotal);
-    tTotal.textContent = this.totalCookies;
+    tTotal.textContent = this.totalCookies;   
+    console.log(tTotal);
+    
 }
 
 
@@ -115,9 +120,8 @@ function makeFooter() {
     tFooter.textContent='Total';
 
     let totalofTotal= 0;
-    
     for (let i = 0; i < workingHours.length; i++) {
-        let total=0; let total2=0;
+        let total=0; 
         for (let j = 0; j < allShops.length; j++) {
             total+= allShops[j].avgCookiesPerHour[i];
         }
@@ -125,18 +129,18 @@ function makeFooter() {
         let finalData= document.createElement('td');
         tRow2.appendChild(finalData);
         finalData.textContent=total;
-        totalofTotal+=total;       
+        totalofTotal+=total;    
+           
         
     }
+
     let total2=0;
     let tFooter1 = document.createElement('th');
     tRow2.appendChild(tFooter1);
     tFooter1.textContent = totalofTotal;
-
 }
+
 makeFooter();
-
-
 
 // --- Forms
 // making the event the listener
@@ -148,10 +152,11 @@ shopForm.addEventListener('submit',submitter)
 function submitter(event) {
     event.preventDefault();
     //console.log(event);
-    let table1 = document.getElementById("table1");
+    document.getElementById("table1").innerHTML = "";
+    //let table1 = document.getElementById("table1");
+    //table1.innerHTML = "";
+    console.log(table1);
     
-    table1.innerHTML = "";
-    makeHeader();
     
     let nameLocation=event.target.nameLocation.value;
     let minNumber=event.target.minNumber.value;
@@ -160,21 +165,15 @@ function submitter(event) {
     
     let addedLocation=new ShopLocation(nameLocation,minNumber,maxNumber,avgNumber)
     
+    makeHeader();
+    
     for (let i = 0; i < allShops.length; i++) {
         allShops[i].getRandomCustomerPerHour();
         allShops[i].getAvgCookiesPerHour();
         allShops[i].getRender();
-        
     }
-    //    console.log(addedLocation);
-    makeFooter();
-
     
-
-
-
-
-
+    //console.log(table1);
+    
+    makeFooter();
 }
-
-
