@@ -1,5 +1,5 @@
 'use strict';
-//what we need to do?
+//This is the js file that i'm using
 // calculate the number of cookies each location must make every day:
 // The number of cookies to make depends on the hours of operation from 6am to 8pm
 //minCustomerH, maxCustomerH
