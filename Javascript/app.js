@@ -44,8 +44,9 @@ let seattleShop = {
     
         let parent= document.getElementById('parent');
         let nameElement= document.createElement('h3');
-        nameElement.textContent=this.locationName;
         parent.appendChild(nameElement);
+        
+        nameElement.textContent=this.locationName;
 
         // console.log(parent);
         
