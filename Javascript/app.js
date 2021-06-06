@@ -95,6 +95,8 @@ let tokyoShop = {
     minH: 3,
     maxH: 24,
     avgCookies: 1.2,
+    totalCookies:0,
+
 
     randomCustomerPerHour: [],
     avgCookiesPerHour: [],
@@ -109,6 +111,7 @@ let tokyoShop = {
         for (let i = 0; i < hourOperation.length; i++) {
             this.avgCookiesPerHour.push(Math.floor(this.randomCustomerPerHour[i]*this.avgCookies))
             // console.log(this.avgCookiesPerHour)
+            this.totalCookies+=this.avgCookiesPerHour[i]
             
         }
     },
@@ -141,6 +144,10 @@ let tokyoShop = {
             // text content
             liElement.textContent=`${hourOperation[i]}: ${this.avgCookiesPerHour[i]} cookies`
         }
+        
+        let totalLi= document.createElement('li');
+        ulElement.appendChild(totalLi);
+        totalLi.textContent= `Total: ${this.totalCookies} cookies`
     }
 
 }
@@ -163,6 +170,8 @@ let dubaiShop = {
     minH: 11,
     maxH: 38,
     avgCookies: 3.7,
+    totalCookies:0,
+
 
     randomCustomerPerHour: [],
     avgCookiesPerHour: [],
@@ -177,6 +186,8 @@ let dubaiShop = {
         for (let i = 0; i < hourOperation.length; i++) {
             this.avgCookiesPerHour.push(Math.floor(this.randomCustomerPerHour[i]*this.avgCookies))
             // console.log(this.avgCookiesPerHour)
+            this.totalCookies+=this.avgCookiesPerHour[i]
+
             
         }
     },
@@ -209,6 +220,9 @@ let dubaiShop = {
             // text content
             liElement.textContent=`${hourOperation[i]}: ${this.avgCookiesPerHour[i]} cookies`
         }
+        let totalLi= document.createElement('li');
+        ulElement.appendChild(totalLi);
+        totalLi.textContent= `Total: ${this.totalCookies} cookies`
     }
     
 
@@ -230,6 +244,7 @@ let parisShop = {
     minH: 20,
     maxH: 38,
     avgCookies: 2.3,
+    totalCookies:0,
 
     randomCustomerPerHour: [],
     avgCookiesPerHour: [],
@@ -245,6 +260,8 @@ let parisShop = {
         for (let i = 0; i < hourOperation.length; i++) {
             this.avgCookiesPerHour.push(Math.floor(this.randomCustomerPerHour[i]*this.avgCookies))
             // console.log(this.avgCookiesPerHour)
+            this.totalCookies+=this.avgCookiesPerHour[i]
+
             
         }
     },
@@ -278,6 +295,9 @@ let parisShop = {
             // text content
             liElement.textContent=`${hourOperation[i]}: ${this.avgCookiesPerHour[i]} cookies`
         }
+        let totalLi= document.createElement('li');
+        ulElement.appendChild(totalLi);
+        totalLi.textContent= `Total: ${this.totalCookies} cookies`
     }
 
 }
@@ -296,6 +316,8 @@ let limaShop = {
     minH: 2,
     maxH: 16    ,
     avgCookies: 4.6,
+    totalCookies:0,
+
 
     randomCustomerPerHour: [],
     avgCookiesPerHour: [],
@@ -310,7 +332,8 @@ let limaShop = {
         for (let i = 0; i < hourOperation.length; i++) {
             this.avgCookiesPerHour.push(Math.floor(this.randomCustomerPerHour[i]*this.avgCookies))
             // console.log(this.avgCookiesPerHour)
-            
+            this.totalCookies+=this.avgCookiesPerHour[i]
+
         }
     },
 
@@ -343,6 +366,9 @@ let limaShop = {
             // text content
             liElement.textContent=`${hourOperation[i]}: ${this.avgCookiesPerHour[i]} cookies`
         }
+        let totalLi= document.createElement('li');
+        ulElement.appendChild(totalLi);
+        totalLi.textContent= `Total: ${this.totalCookies} cookies`
     }
 
 }
