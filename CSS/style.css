@@ -1,57 +1,57 @@
 body{
-background-color: beige;
-font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: beige;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 
 
 table,th,td {
+    background-color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: solid rgb(25, 117, 179) 1px;
     border-collapse: collapse;
     text-align: center;
-}
-th {
+  }
+  th {
     height: 10px;
     width: 80px;
     
   }
-header{
+  header{
     background-color: rgb(211, 238, 255);
     padding-top: 5px;
     padding-bottom: 10px;
-}
-header h1{
+  }
+  header h1{
     text-align: center;
     word-spacing: 10px;
     font-size: 350%;
     color: rgb(25, 117, 179);
     position: relative;
-
-
-}
-header h2{
+    
+    
+  }
+  header h2{
     color: rgb(25, 117, 179);
     text-align: center;
     word-spacing: 10px;
     font-size: 200%;
-
-
-}
-
-h3{
+    
+    
+  }
+  
+  h3{
     font-size: 120%;
-
     font-size: 150%;
     color: rgb(25, 117, 179);
-
-}
-header nav{
+    
+  }
+  header nav{
     float: right;
     text-transform: capitalize;
-
-}
-header a{
+    
+  }
+  header a{
     text-decoration: none;
     padding-left: 30px;
     font-size: 220%;
