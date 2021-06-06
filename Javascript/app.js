@@ -150,6 +150,7 @@ let shopForm=document.getElementById('shopInfos');
 shopForm.addEventListener('submit',submitter)
 
 function submitter(event) {
+
     event.preventDefault();
     //console.log(event);
     document.getElementById("table1").innerHTML = "";
@@ -165,6 +166,11 @@ function submitter(event) {
     
     let addedLocation=new ShopLocation(nameLocation,minNumber,maxNumber,avgNumber)
     
+    if(maxNumber<=minNumber){
+        alert('You have to put the Maximum number greater than the minimum');
+        
+        
+        window.location.reload();}
     makeHeader();
     
     for (let i = 0; i < allShops.length; i++) {
